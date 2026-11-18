@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Votter App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="voting-card">
+    <h1>Votter <span>App</span></h1>
+    <p class="subtitle">Choose your candidate</p>
+
+    <section class="candidates" aria-label="Candidates">
+      <button class="candidate" data-candidate="Candidate A" aria-pressed="false">
+        <span class="avatar">A</span>
+        <span>Candidate A</span>
+        <span class="vote-label">Vote</span>
+      </button>
+
+      <button class="candidate" data-candidate="Candidate B" aria-pressed="false">
+        <span class="avatar">B</span>
+        <span>Candidate B</span>
+        <span class="vote-label">Vote</span>
+      </button>
+
+      <button class="candidate" data-candidate="Candidate C" aria-pressed="false">
+        <span class="avatar">C</span>
+        <span>Candidate C</span>
+        <span class="vote-label">Vote</span>
+      </button>
+    </section>
+
+    <p id="message" role="status" aria-live="polite">Your vote matters.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
